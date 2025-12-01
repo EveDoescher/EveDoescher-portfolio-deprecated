@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import GearsImage from "../../assets/Gears.jpg";
 import PasseImage from "../../assets/Passe_onibus.jpg";
 import PortfolioImage from "../../assets/Portfolio.png";
+import PIMImage from "../../assets/PIM.png";
 
 export default function ProgrammingProjectsCarousel() {
   const settings = {
@@ -64,6 +65,14 @@ export default function ProgrammingProjectsCarousel() {
     },
     {
       id: 2,
+      title: "Sistema Acadêmico Colaborativo",
+      description: "Desenvolvimento de um Sistema Desktop para Gestão Acadêmica entre professores e alunos, realizado como Projeto Integrador Multidisciplinar (PIM) para a faculdade de Análise e Desenvolvimento de Sistemas. O projeto implementa uma arquitetura em camadas , utilizando Python e Flet  para o front-end desktop. O back-end é integrado ao MySQL via SQLAlchemy ORM , e conta com um sistema de autenticação com controle de acesso por perfis. A solução é containerizada via Docker e inclui um módulo de estatísticas em C para otimizar a performance dos cálculos.",
+      image: PIMImage,
+      tags: ["Python", "C", "Flet", "MySQL","SQLAlchemy","Docker"],
+      github: "https://github.com/EveDoescher/PIM",
+    },
+    {
+      id: 3,
       title: "Portfólio",
       description: "Desenvolvimento de um site de portfólio moderno e performático, com design responsivo e experiência de usuário otimizada. O projeto utiliza React.js e TypeScript para uma base sólida e escalável, Vite para build rápido e eficiente, e Tailwind CSS para estilização ágil e consistente.",
       image: PortfolioImage,
@@ -71,7 +80,7 @@ export default function ProgrammingProjectsCarousel() {
       github: "https://github.com/EveDoescher/EveDoescher-portfolio",
     },
     {
-      id: 3,
+      id: 4,
       title: "Projeto em desenvolvimento",
       description: "Projeto em desenvolvimento ativo com objetivo de construir solução robusta e eficiente usando tecnologias modernas.",
       image: GearsImage,
