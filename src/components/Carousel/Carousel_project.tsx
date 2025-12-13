@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GearsImage from "../../assets/Gears.jpg";
 import PasseImage from "../../assets/Passe_onibus.jpg";
+import SentineImage from "../../assets/SentinelLog.png";
 import PortfolioImage from "../../assets/Portfolio.png";
 import PIMImage from "../../assets/PIM.png";
 
@@ -57,11 +58,11 @@ export default function ProgrammingProjectsCarousel() {
   const projects = [
     {
       id: 1,
-      title: "Calculadora de Passe",
-      description: "Sistema calculadora de duração de crédito de passe de ônibus, considerando perfil de consumo do usuário e valor depositado.",
-      image: PasseImage,
-      tags: ["Java"],
-      github: "https://github.com/EveDoescher/Calculadora-de-Passe/blob/main/Calculadora%20de%20passe/src/Main.java",
+      title: "SentineLog - API de ingestão e monitoramento de Logs",
+      description: "O SentineLog é uma solução backend desenhada para resolver o problema de descentralização de logs. Ele atua como um 'Hub' central, recebendo eventos de múltiplos microsserviços via API REST, enfileirando-os para processamento assíncrono e armazenando-os para auditoria. O sistema possui inteligência para detectar níveis de severidade crítica (ERROR) em ambientes produtivos (PROD) e disparar alertas em tempo real.",
+      image: SentineImage,
+      tags: ["Java 21", "Spring Boot", "RabbitMQ", "MongoDB", "Docker", "k6", "Swagger"],
+      github: "https://github.com/EveDoescher/SentineLog",
     },
     {
       id: 2,
@@ -81,6 +82,14 @@ export default function ProgrammingProjectsCarousel() {
     },
     {
       id: 4,
+      title: "Calculadora de Passe",
+      description: "Sistema calculadora de duração de crédito de passe de ônibus, considerando perfil de consumo do usuário e valor depositado.",
+      image: PasseImage,
+      tags: ["Java"],
+      github: "https://github.com/EveDoescher/Calculadora-de-Passe/blob/main/Calculadora%20de%20passe/src/Main.java",
+    },
+    {
+      id: 5,
       title: "Projeto em desenvolvimento",
       description: "Projeto em desenvolvimento ativo com objetivo de construir solução robusta e eficiente usando tecnologias modernas.",
       image: GearsImage,
