@@ -1,6 +1,6 @@
 {
   "name": "react-page",
-  "homepage": "https://evedoescher.github.io/EveDoescher-portfolio",
+  "homepage": "https://evedoescher.github.io/EveDoescher-portfolio-deprecated",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "yarn build",
-  "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -45,6 +45,6 @@
     "globals": "^16.3.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4"
+    "vite": "^7.2.7"
   }
 }
